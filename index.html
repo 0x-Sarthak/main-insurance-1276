@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>OC3AN PROTOCOL</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/eddbefa6bc.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Belleza&display=swap"
+			rel="stylesheet"
+		/>
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<style>
+		body {
+			background-color: #f6fbf4;
+			text-align: center;
+		}
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: "Poppins", sans-serif;
+		}
+		.hidden{
+			opacity: 0;
+			transform: translateX(100px);	
+			
+			transition: all 3s;
+		}
+		.show{
+			opacity: 1;
+           transform: translateX(0px)
+		}
+
+		nav {
+			z-index: 999;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color: white;
+			padding: 0 100px;
+			transition: 0.6s;
+		}
+
+		nav .logo a {
+			padding-left: 100px;
+			color: #59ce8f;
+			font-size: 2em;
+			text-decoration: none;
+			font-weight: 900;
+			letter-spacing: 2px;
+			font-family: "Orbitron", sans-serif;
+		}
+
+		nav .navigation {
+			position: relative;
+			line-height: 75px;
+		}
+
+		nav .navigation .menu {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			list-style: none;
+			user-select: none;
+		}
+
+		.menu-items > a {
+			color: black;
+			font-size: 1em;
+			text-decoration: none;
+			padding-right: 20px;
+			margin-right: 130px;
+		}
+
+		.nav-btn {
+			background-color: #f9fcfb;
+			width: 100px;
+			margin: 17px;
+			border-radius: 5px;
+			border: 1px solid;
+			color: #01b289;
+			border-color: #59ce8f;
+
+			font-family: "Orbitron", sans-serif;
+		}
+		.nav-btn:hover {
+			background-color: #59ce8f;
+			font-family: "Belleza", sans-serif;
+			text-decoration: none;
+		}
+		.nav-btn2 {
+			background-color: #f9fcfb;
+			color: white;
+			width: 150px;
+			margin: 17px;
+			border-radius: 8px;
+			border: 1px solid;
+			border-color: #59ce8f;
+			background-color: #01b289;
+			font-weight: 600;
+		}
+		.nav-btn2:hover {
+			background-color: #59ce8f;
+		}
+
+		.champ {
+			font-weight: 300;
+			font-size: 50px;
+			padding-top: 300px;
+			padding-left: 100px;
+			text-align: left;
+			padding-left: 200px;
+			align-items: left;
+		}
+
+		.menu-items > a:hover {
+			color: #1ee494;
+		}
+
+		.main {
+			display: flex;
+			height: 800px;
+			width: 100%;
+		}
+
+		.top {
+			width: 100%;
+		}
+
+		#email {
+			border-start-start-radius: 5px;
+			width: 200px;
+			height: 50px;
+			padding: 10px;
+			margin-left: 20px;
+			border: 2px solid #01b289;
+		}
+
+		.w-button {
+			width: 100px;
+			height: 50px;
+			background-color: #01b289;
+			border-end-end-radius: 5px;
+			border: 0;
+			color: WHITE;
+			font-weight: 800;
+			font-size: 22%;
+			border: 2px solid #01b289;
+		}
+
+		.image-hero {
+			margin-top: 50px;
+			margin-right: 200px;
+			width: 80%;
+			background: rgb(2, 0, 36);
+			background: linear-gradient(
+				90deg,
+				rgba(2, 0, 36, 1) 0%,
+				rgba(0, 255, 111, 1) 0%,
+				rgba(0, 212, 255, 1) 100%
+			);
+			border-end-end-radius: 150px;
+			border-start-start-radius: 100px;
+			border-bottom-left-radius: 400px;
+			margin-top: 100px;
+		}
+
+		.mainn {
+			font-family: "Belleza", sans-serif;
+			padding-bottom: 40px;
+		}
+
+		p {
+			color: #283739;
+			font-weight: 400;
+			font-family: "Open Sans", sans-serif;
+		}
+
+		.mainn2 {
+			font-family: "Belleza", sans-serif;
+			padding-top: 100px;
+		}
+		.mid {
+			display: flex;
+			justify-content: center;
+			margin-top: 50px;
+			gap: 50px;
+		}
+
+		.mid-img2 {
+			padding: 50px;
+			margin-top: 30px;
+
+			border-radius: 50px;
+		}
+
+		.back {
+			margin-top: 30px;
+			padding: 50px;
+
+			border-radius: 50px;
+		}
+
+		.middy {
+			font-weight: 800;
+			color: #557571;
+		}
+
+		.mid-2img {
+			width: 20%;
+		}
+
+		.jammm {
+			font-family: "Belleza", sans-serif;
+		}
+
+		.mid-2img {
+			width: 50%;
+			padding-top: 50px;
+		}
+
+		.jammm1 {
+			margin-top: 100px;
+			font-family: "Belleza", sans-serif;
+		}
+
+		.jammm2 {
+			color: #5c8d89;
+			font-family: "Open Sans", sans-serif;
+		}
+
+		.ankr {
+			color: black;
+			text-decoration: none;
+			font-family: "Open Sans", sans-serif;
+		}
+
+		/* footer part css */
+		footer {
+			width: 100%;
+			padding: 200px;
+			margin-top: 200px;
+
+			bottom: 0;
+			left: 0;
+			background: #fefbf3;
+		}
+		footer .content {
+			max-width: 1350px;
+			margin: auto;
+			padding: 20px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		footer .content p,
+		a {
+			color: #476072;
+		}
+		footer .content .box {
+			width: 33%;
+			transition: all 0.4s ease;
+		}
+		footer .content .topic {
+			font-size: 22px;
+			font-weight: 600;
+			color: #283739;
+			margin-bottom: 16px;
+		}
+		footer .content p {
+			text-align: justify;
+		}
+		footer .content .lower .topic {
+			margin: 24px 0 5px 0;
+			color: #476072;
+		}
+		footer .content .lower i {
+			padding-right: 16px;
+		}
+		footer .content .middle {
+			padding-left: 80px;
+		}
+		footer .content .middle a {
+			line-height: 50px;
+			text-decoration: none;
+		}
+		footer .content .right input[type="text"] {
+			height: 45px;
+			width: 100%;
+			outline: none;
+			color: #d9d9d9;
+			background: #000;
+			border-radius: 5px;
+			padding-left: 10px;
+			font-size: 17px;
+			border: 2px solid #222222;
+		}
+		footer .content .right input[type="submit"] {
+			height: 42px;
+			width: 100%;
+			font-size: 18px;
+			color: #476072;
+
+			background: #eb2f06;
+			outline: none;
+			border-radius: 5px;
+			letter-spacing: 1px;
+			cursor: pointer;
+			margin-top: 12px;
+			border: 2px solid #eb2f06;
+			transition: all 0.3s ease-in-out;
+		}
+		.content .right input[type="submit"]:hover {
+			background: none;
+			color: #eb2f06;
+		}
+		footer .content .media-icons a {
+			font-size: 16px;
+			height: 45px;
+			width: 45px;
+			display: inline-block;
+			text-align: center;
+			line-height: 43px;
+			border-radius: 5px;
+			border: 2px solid #222222;
+			margin: 30px 5px 0 0;
+			transition: all 0.3s ease;
+		}
+		.content .media-icons a:hover {
+			border-color: #eb2f06;
+		}
+		footer .bottom {
+			width: 100%;
+			text-align: right;
+			color: #d9d9d9;
+			padding: 0 40px 5px 0;
+		}
+		footer .bottom a {
+			color: #eb2f06;
+		}
+		footer a {
+			transition: all 0.3s ease;
+		}
+		footer a:hover {
+			color: #eb2f06;
+		}
+		@media (max-width: 1100px) {
+			footer .content .middle {
+				padding-left: 50px;
+			}
+		}
+		@media (max-width: 950px) {
+			footer .content .box {
+				width: 50%;
+			}
+			.content .right {
+				margin-top: 40px;
+			}
+		}
+		@media (max-width: 560px) {
+			footer {
+				position: relative;
+			}
+			footer .content .box {
+				width: 100%;
+				margin-top: 30px;
+			}
+			footer .content .middle {
+				padding-left: 0;
+			}
+		}
+
+		.space {
+			line-height: 50px;
+			text-decoration: none;
+		}
+
+		.space1 {
+			line-height: 50px;
+			text-decoration: none;
+		}
+	</style>
+	<body>
+		<nav>
+			<div class="logo">
+				<a href="#"><i class="fa-brands fa-digital-ocean"></i>C3AN</a>
+			</div>
+			<div class="navigation">
+				<ul class="menu">
+					<li class="menu-items"><a href="#">Products</a></li>
+					<li class="menu-items"><a href="#">Templates</a></li>
+					<li class="menu-items"><a href="#">Pricing</a></li>
+					<li class="menu-items"><a href="review.html">Reviews</a></li>
+					<button class="nav-btn">
+						<a href="login.html" class="ankr">LOG IN</a>
+					</button>
+					<button class="nav-btn2">
+						<a href="login.html" class="ankr"> GET STARTED</a>
+					</button>
+				</ul>
+			</div>
+			
+		</nav>
+		<div class="main">
+			<div class="top champ">
+				<div class="hidden">
+
+					<h4 class="mainn">
+						Everything you need to<br />
+						run your business.
+						<br />
+					</h4>
+				</div>
+				<form
+					id="wf-form-Longtail-Form"
+					name="wf-form-Longtail-form"
+					data-name="Longtail form"
+					method="get"
+					class="email-form"
+					aria-label="Longtail form"
+				>
+					<input
+						type="email"
+						class="field-style w-input"
+						maxlength="256"
+						name="Email"
+						data-name="Email"
+						placeholder="Enter your email"
+						id="email"
+						required=""
+					/><input
+						type="submit"
+						value="START FREE"
+						data-wait="Please wait..."
+						id="longtail-form-button"
+						class="cta-submit w-button"
+					/>
+				</form>
+			</div>
+			<div class="top rotate">
+				<img
+					src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/60dc499268d597166db997aa_bonsai_hero-opt-2.png"
+					alt="Hero image"
+					sizes="(max-width: 479px) 94vw, (max-width: 767px) 47vw, (max-width: 991px) 53vw, 56vw"
+					srcset="
+						https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/60dc499268d597166db997aa_bonsai_hero-opt-2-p-500.png  500w,
+						https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/60dc499268d597166db997aa_bonsai_hero-opt-2.png       1578w
+					"
+					width="789"
+					class="image-hero"
+				/>
+			</div>
+		</div>
+
+		<div class="hidden">
+
+			<h1 class="mainn2">Make more, manage less</h1>
+		</div>
+
+		<p>
+			OC3AN integrates and automates every step of your business so it <br />
+			runs seamlessly - from proposal to tax season.
+		</p>
+		<div class="mid">
+			<div>
+				<p class="middy">Without OC3AN</p>
+				<img
+					class="mid-img2"
+					src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c6c51feb665_ill_before_2n%20block.svg"
+					alt="Without Bonsai image"
+					loading="lazy"
+				/>
+			</div>
+			<div>
+				<p class="middy">With OC3AN</p>
+				<img
+					class="back"
+					src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c9ed8feb675_ill_after_2nd%20block.svg"
+					alt="With Bonsai image"
+					loading="lazy"
+				/>
+			</div>
+		</div>
+
+		<div>
+			<div></div>
+			<div>
+				<div class="hidden">
+
+					<h1 class="jammm">Win More Work</h1>
+				</div>
+				<p>
+					With just a few clicks, you can craft structured proposals <br />
+					with clear estimates to close your deals faster.
+				</p>
+				<div class="hidden">
+
+					<img
+					class="mid-2img"
+					srcset="
+					https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/6050acdd031b9f58db100f72_Graphic_Proposal-opt-p-500.png  500w,
+					https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/6050acdd031b9f58db100f72_Graphic_Proposal-opt.png       1254w
+					"
+					sizes="(max-width: 991px) 100vw, 46vw"
+					alt=""
+					src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/6050acdd031b9f58db100f72_Graphic_Proposal-opt.png"
+					loading="lazy"
+					class="image-absolute _8"
+					/>
+				</div>
+				</div>
+		</div>
+
+		<h1 class="jammm1">
+			Trusted by 500K+ self-employed workers <br />
+			and small businesses
+		</h1>
+		<br />
+
+		<h3 class="jammm2">
+			Whether you’re just getting started or your business is <br />
+			booming, Bonsai has you covered.
+		</h3>
+
+		<div>
+			<div></div>
+			<div></div>
+		</div>
+
+		<footer>
+			<div class="content">
+				<div class="left box">
+					<div class="upper">
+						<div class="topic">PRODUCT</div>
+						<div><a class="space" href="#">PROPOSAL</a></div>
+						<div><a class="space" href="#">CONTRACTS</a></div>
+						<div><a class="space" href="#">INVOICING</a></div>
+						<div><a class="space" href="#">CLIENT CRM</a></div>
+						<div><a class="space" href="#">TIME TRACKING</a></div>
+						<div><a class="space" href="#">TASK TRACKING</a></div>
+						<div><a class="space" href="#">FORMS</a></div>
+						<div><a class="space" href="#"> ACCOUNTING</a></div>
+						<div><a class="space" href="#"> OC3AN TAX</a></div>
+						<div><a class="space" href="#"> OC3AN CASH</a></div>
+						<div><a class="space" href="#">OC3AN REVIEWS</a></div>
+					</div>
+				</div>
+				<div class="middle box">
+					<div class="topic">SERVICES</div>
+					<div><a href="#">INVOICING</a></div>
+					<div><a href="#">FRELANCE RESOURCE</a></div>
+					<div><a href="#">FREELANCE BLOG BY OCEAN</a></div>
+					<div><a href="#">HOW TO WRIT A CONTRACT</a></div>
+					<div><a href="#">TAX CALCULATOR</a></div>
+					<div><a href="#">TAX DEDUCTION</a></div>
+				</div>
+				<div class="right box">
+					<div class="topic">OC3AN</div>
+					<div><a class="space1"  href="#">INVOICING</a></div>
+					<div><a class="space1"  href="#">FRELANCE RESOURCE</a></div>
+					<div><a class="space1"  href="#">FREELANCE BLOG BY OCEAN</a></div>
+					<div><a class="space1"  href="#">HOW TO WRIT A CONTRACT</a></div>
+					<div><a class="space1"  href="#">TAX CALCULATOR</a></div>
+					<div><a class="space1"  href="#">TAX DEDUCTION</a></div>
+						<div class="media-icons">
+							<a href="#"><i class="fab fa-facebook-f"></i></a>
+							<a href="#"><i class="fab fa-instagram"></i></a>
+							<a href="#"><i class="fab fa-twitter"></i></a>
+							<a href="#"><i class="fab fa-youtube"></i></a>
+							<a href="#"><i class="fab fa-linkedin-in"></i></a>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="bottom">
+				<p>
+					Copyright © 2020 <a href="#">OC3AN PROTOCOL</a> All rights reserved
+				</p>
+			</div>
+		</footer>
+	</body>
+	<script>
+		const observer = new IntersectionObserver((entries) => {
+	entries.forEach((entry) => {
+		console.log(entry);
+		if (entry.isIntersecting) {
+			entry.target.classList.add("show");
+		} else {
+			entry.target.classList.remove("show");
+		}
+	});
+});
+
+     const hiddenElements = document.querySelectorAll(".hidden");
+     hiddenElements.forEach((el) => observer.observe(el));
+	</script>
+
+</html>

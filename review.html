@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/eddbefa6bc.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Belleza&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<style>
+		body {
+			background-color: #f6fbf4;
+			text-align: center;
+		}
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: "Poppins", sans-serif;
+		}
+		.hidden {
+			opacity: 0;
+			transform: translateX(100px);
+
+			transition: all 3s;
+		}
+		.show {
+			opacity: 1;
+			transform: translateX(0px);
+		}
+
+		nav {
+			z-index: 999;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color: white;
+			padding: 0 100px;
+			transition: 0.6s;
+		}
+
+		nav .logo a {
+			padding-left: 100px;
+			color: #59ce8f;
+			font-size: 2em;
+			text-decoration: none;
+			font-weight: 900;
+			letter-spacing: 2px;
+			font-family: "Orbitron", sans-serif;
+		}
+
+		nav .navigation {
+			position: relative;
+			line-height: 75px;
+		}
+
+		nav .navigation .menu {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			list-style: none;
+			user-select: none;
+		}
+
+		.menu-items > a {
+			color: black;
+			font-size: 1em;
+			text-decoration: none;
+			padding-right: 20px;
+			margin-right: 130px;
+		}
+
+		.nav-btn {
+			background-color: #f9fcfb;
+			width: 100px;
+			margin: 17px;
+			border-radius: 5px;
+			border: 1px solid;
+			color: #01b289;
+			border-color: #59ce8f;
+
+			font-family: "Orbitron", sans-serif;
+		}
+		.nav-btn:hover {
+			background-color: #59ce8f;
+			font-family: "Belleza", sans-serif;
+			text-decoration: none;
+		}
+		.nav-btn2 {
+			background-color: #f9fcfb;
+			color: white;
+			width: 150px;
+			margin: 17px;
+			border-radius: 8px;
+			border: 1px solid;
+			border-color: #59ce8f;
+			background-color: #01b289;
+			font-weight: 600;
+		}
+		.nav-btn2:hover {
+			background-color: #59ce8f;
+		}
+
+		.review {
+			margin-top: 250px;
+			font-family: "Orbitron", sans-serif;
+			text-decoration: none;
+		}
+
+		.review a {
+			color: #59ce8f;
+			font-size: 2em;
+			text-decoration: none;
+			font-weight: 900;
+			letter-spacing: 2px;
+			font-family: "Orbitron", sans-serif;
+		}
+
+		.p-tag {
+			font-family: "Belleza", sans-serif;
+			color: gray;
+			font-weight: 600;
+		}
+
+		.main-div {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: auto;
+			gap: 30px;
+			width: 80%;
+			margin: auto;
+			height: auto;
+			margin-top: 50px;
+			justify-content: left;
+            background-color: #C0D8C0;
+		}
+
+		.main-div > div {
+			width: 100%;
+			height: 500px;
+
+			justify-content: left;
+			text-align: center;
+			border-top-right-radius:50px;
+            border-bottom-left-radius: 100px;
+			background-color: #f9f9f9;
+			
+		}
+
+		.img-male {
+			text-align: left;
+			margin-right: 450px;
+			margin-top: 50px;
+
+			border-top-right-radius: 60px;
+
+			border-bottom-left-radius: 60px;
+		}
+
+		h3 {
+			color: grey;
+			font-size: large;
+			font-family: "Orbitron", sans-serif;
+			font-weight: 400;
+			padding-top: 40px;
+		}
+
+        footer {
+			width: 100%;
+			padding: 200px;
+			margin-top: 200px;
+
+			bottom: 0;
+			left: 0;
+			background: #fefbf3;
+		}
+		footer .content {
+			max-width: 1350px;
+			margin: auto;
+			padding: 20px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		footer .content p,
+		a {
+			color: #476072;
+		}
+		footer .content .box {
+			width: 33%;
+			transition: all 0.4s ease;
+		}
+		footer .content .topic {
+			font-size: 22px;
+			font-weight: 600;
+			color: #283739;
+			margin-bottom: 16px;
+		}
+		footer .content p {
+			text-align: justify;
+		}
+		footer .content .lower .topic {
+			margin: 24px 0 5px 0;
+			color: #476072;
+		}
+		footer .content .lower i {
+			padding-right: 16px;
+		}
+		footer .content .middle {
+			padding-left: 80px;
+		}
+		footer .content .middle a {
+			line-height: 50px;
+			text-decoration: none;
+		}
+		footer .content .right input[type="text"] {
+			height: 45px;
+			width: 100%;
+			outline: none;
+			color: #d9d9d9;
+			background: #000;
+			border-radius: 5px;
+			padding-left: 10px;
+			font-size: 17px;
+			border: 2px solid #222222;
+		}
+		footer .content .right input[type="submit"] {
+			height: 42px;
+			width: 100%;
+			font-size: 18px;
+			color: #476072;
+
+			background: #eb2f06;
+			outline: none;
+			border-radius: 5px;
+			letter-spacing: 1px;
+			cursor: pointer;
+			margin-top: 12px;
+			border: 2px solid #eb2f06;
+			transition: all 0.3s ease-in-out;
+		}
+		.content .right input[type="submit"]:hover {
+			background: none;
+			color: #eb2f06;
+		}
+		footer .content .media-icons a {
+			font-size: 16px;
+			height: 45px;
+			width: 45px;
+			display: inline-block;
+			text-align: center;
+			line-height: 43px;
+			border-radius: 5px;
+			border: 2px solid #222222;
+			margin: 30px 5px 0 0;
+			transition: all 0.3s ease;
+		}
+		.content .media-icons a:hover {
+			border-color: #eb2f06;
+		}
+		footer .bottom {
+			width: 100%;
+			text-align: right;
+			color: #d9d9d9;
+			padding: 0 40px 5px 0;
+		}
+		footer .bottom a {
+			color: #eb2f06;
+		}
+		footer a {
+			transition: all 0.3s ease;
+		}
+		footer a:hover {
+			color: #eb2f06;
+		}
+		@media (max-width: 1100px) {
+			footer .content .middle {
+				padding-left: 50px;
+			}
+		}
+		@media (max-width: 950px) {
+			footer .content .box {
+				width: 50%;
+			}
+			.content .right {
+				margin-top: 40px;
+			}
+		}
+		@media (max-width: 560px) {
+			footer {
+				position: relative;
+			}
+			footer .content .box {
+				width: 100%;
+				margin-top: 30px;
+			}
+			footer .content .middle {
+				padding-left: 0;
+			}
+		}
+
+		.space {
+			line-height: 50px;
+			text-decoration: none;
+		}
+
+		.space1 {
+			line-height: 50px;
+			text-decoration: none;
+		}
+        .ankr {
+            text-decoration: none;
+            color: #222222;
+            font-weight: 700;
+        }
+	</style>
+	<body>
+		<nav>
+			<div class="logo">
+				<a href="index.html"><i class="fa-brands fa-digital-ocean"></i>C3AN</a>
+			</div>
+			<div class="navigation">
+				<ul class="menu">
+					<li class="menu-items"><a href="#">Products</a></li>
+					<li class="menu-items"><a href="#">Templates</a></li>
+					<li class="menu-items"><a href="#">Pricing</a></li>
+					<li class="menu-items"><a href="#">Reviews</a></li>
+					<button class="nav-btn">
+						<a  href="login.html" class="ankr">LOG IN</a>
+					</button>
+					<button class="nav-btn2">
+						<a href="login.html" class="ankr"> GET STARTED</a>
+					</button>
+				</ul>
+			</div>
+		</nav>
+
+		<h1 class="review">
+			<a href="#"><i class="fa-brands fa-digital-ocean"></i>C3AN</a> REVIEWS
+		</h1>
+		<p class="p-tag">200,000+ Freelancers Love OC3AN. Here's why.</p>
+
+		<div class="main-div">
+			<div>
+				<img
+					class="img-male"
+					src="https://imgs.search.brave.com/8C_x2h03WG_9Quh7a7g7soe8JNbqR0j5Am041KIiASU/rs:fit:470:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC41/UUxaUXBybHdkb3Y3/VzZDQm5IaTZ3SGFI/ZSZwaWQ9QXBp"
+					alt=""
+				/>
+				<img
+					src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c29a9feb660_quote-icon.svg"
+					alt=""
+					class="quote-icon"
+				/>
+				<h3>
+					"I did a lot of research before switching to Bonsai from another
+					invoicing service. The ability to send and sign contracts was a game
+					changer for me. No one else offers such a seamless process from
+					proposal to contract to invoice. It has saved me a lot of time and
+					lets me focus on creative work."
+				</h3>
+			</div>
+			<div>
+				<img
+					class="img-male"
+					src="https://imgs.search.brave.com/8C_x2h03WG_9Quh7a7g7soe8JNbqR0j5Am041KIiASU/rs:fit:470:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC41/UUxaUXBybHdkb3Y3/VzZDQm5IaTZ3SGFI/ZSZwaWQ9QXBp"
+					alt=""
+				/>
+
+				<img
+					src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c29a9feb660_quote-icon.svg"
+					alt=""
+					class="quote-icon"
+				/>
+
+				<h3>
+					"I did a lot of research before switching to Bonsai from another
+					invoicing service. The ability to send and sign contracts was a game
+					changer for me. No one else offers such a seamless process from
+					proposal to contract to invoice. It has saved me a lot of time and
+					lets me focus on creative work."
+				</h3>
+			</div>
+			<div>
+				<img
+					class="img-male"
+					src="https://imgs.search.brave.com/8C_x2h03WG_9Quh7a7g7soe8JNbqR0j5Am041KIiASU/rs:fit:470:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC41/UUxaUXBybHdkb3Y3/VzZDQm5IaTZ3SGFI/ZSZwaWQ9QXBp"
+					alt=""
+				/>
+
+				<img
+					src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c29a9feb660_quote-icon.svg"
+					alt=""
+					class="quote-icon"
+				/>
+				<h3>
+					"I did a lot of research before switching to Bonsai from another
+					invoicing service. The ability to send and sign contracts was a game
+					changer for me. No one else offers such a seamless process from
+					proposal to contract to invoice. It has saved me a lot of time and
+					lets me focus on creative work."
+				</h3>
+			</div>
+			<div>
+				<img
+					class="img-male"
+					src="https://imgs.search.brave.com/8C_x2h03WG_9Quh7a7g7soe8JNbqR0j5Am041KIiASU/rs:fit:470:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC41/UUxaUXBybHdkb3Y3/VzZDQm5IaTZ3SGFI/ZSZwaWQ9QXBp"
+					alt=""
+				/>
+
+				<img
+					src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c29a9feb660_quote-icon.svg"
+					alt=""
+					class="quote-icon"
+				/>
+				<h3>
+					"I did a lot of research before switching to Bonsai from another
+					invoicing service. The ability to send and sign contracts was a game
+					changer for me. No one else offers such a seamless process from
+					proposal to contract to invoice. It has saved me a lot of time and
+					lets me focus on creative work."
+				</h3>
+			</div>
+			<div>
+				<img
+					class="img-male"
+					src="https://imgs.search.brave.com/8C_x2h03WG_9Quh7a7g7soe8JNbqR0j5Am041KIiASU/rs:fit:470:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC41/UUxaUXBybHdkb3Y3/VzZDQm5IaTZ3SGFI/ZSZwaWQ9QXBp"
+					alt=""
+				/>
+
+				<img
+					src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c29a9feb660_quote-icon.svg"
+					alt=""
+					class="quote-icon"
+				/>
+				<h3>
+					"I did a lot of research before switching to Bonsai from another
+					invoicing service. The ability to send and sign contracts was a game
+					changer for me. No one else offers such a seamless process from
+					proposal to contract to invoice. It has saved me a lot of time and
+					lets me focus on creative work."
+				</h3>
+			</div>
+			<div>
+				<img
+					class="img-male"
+					src="https://imgs.search.brave.com/8C_x2h03WG_9Quh7a7g7soe8JNbqR0j5Am041KIiASU/rs:fit:470:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC41/UUxaUXBybHdkb3Y3/VzZDQm5IaTZ3SGFI/ZSZwaWQ9QXBp"
+					alt=""
+				/>
+
+				<img
+					src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c29a9feb660_quote-icon.svg"
+					alt=""
+					class="quote-icon"
+				/>
+				<h3>
+					"I did a lot of research before switching to Bonsai from another
+					invoicing service. The ability to send and sign contracts was a game
+					changer for me. No one else offers such a seamless process from
+					proposal to contract to invoice. It has saved me a lot of time and
+					lets me focus on creative work."
+				</h3>
+			</div>
+		</div>
+
+        <footer>
+			<div class="content">
+				<div class="left box">
+					<div class="upper">
+						<div class="topic">PRODUCT</div>
+						<div><a class="space" href="#">PROPOSAL</a></div>
+						<div><a class="space" href="#">CONTRACTS</a></div>
+						<div><a class="space" href="#">INVOICING</a></div>
+						<div><a class="space" href="#">CLIENT CRM</a></div>
+						<div><a class="space" href="#">TIME TRACKING</a></div>
+						<div><a class="space" href="#">TASK TRACKING</a></div>
+						<div><a class="space" href="#">FORMS</a></div>
+						<div><a class="space" href="#"> ACCOUNTING</a></div>
+						<div><a class="space" href="#"> OC3AN TAX</a></div>
+						<div><a class="space" href="#"> OC3AN CASH</a></div>
+						<div><a class="space" href="#">OC3AN REVIEWS</a></div>
+					</div>
+				</div>
+				<div class="middle box">
+					<div class="topic">SERVICES</div>
+					<div><a href="#">INVOICING</a></div>
+					<div><a href="#">FRELANCE RESOURCE</a></div>
+					<div><a href="#">FREELANCE BLOG BY OCEAN</a></div>
+					<div><a href="#">HOW TO WRIT A CONTRACT</a></div>
+					<div><a href="#">TAX CALCULATOR</a></div>
+					<div><a href="#">TAX DEDUCTION</a></div>
+				</div>
+				<div class="right box">
+					<div class="topic">OC3AN</div>
+					<div><a class="space1"  href="#">INVOICING</a></div>
+					<div><a class="space1"  href="#">FRELANCE RESOURCE</a></div>
+					<div><a class="space1"  href="#">FREELANCE BLOG BY OCEAN</a></div>
+					<div><a class="space1"  href="#">HOW TO WRIT A CONTRACT</a></div>
+					<div><a class="space1"  href="#">TAX CALCULATOR</a></div>
+					<div><a class="space1"  href="#">TAX DEDUCTION</a></div>
+						<div class="media-icons">
+							<a href="#"><i class="fab fa-facebook-f"></i></a>
+							<a href="#"><i class="fab fa-instagram"></i></a>
+							<a href="#"><i class="fab fa-twitter"></i></a>
+							<a href="#"><i class="fab fa-youtube"></i></a>
+							<a href="#"><i class="fab fa-linkedin-in"></i></a>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="bottom">
+				<p>
+					Copyright © 2020 <a href="#">OC3AN PROTOCOL</a> All rights reserved
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>
