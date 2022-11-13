@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>OC3AN PROTOCOL</title>
+		<title>Document</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -27,7 +27,7 @@
 			href="https://fonts.googleapis.com/css2?family=Belleza&display=swap"
 			rel="stylesheet"
 		/>
-		
+
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -35,6 +35,7 @@
 			rel="stylesheet"
 		/>
 	</head>
+
 	<style>
 		body {
 			background-color: #f6fbf4;
@@ -46,15 +47,15 @@
 			box-sizing: border-box;
 			font-family: "Poppins", sans-serif;
 		}
-		.hidden{
+		.hidden {
 			opacity: 0;
-			transform: translateX(100px);	
-			
+			transform: translateX(100px);
+
 			transition: all 3s;
 		}
-		.show{
+		.show {
 			opacity: 1;
-           transform: translateX(0px)
+			transform: translateX(0px);
 		}
 
 		nav {
@@ -133,140 +134,71 @@
 			background-color: #59ce8f;
 		}
 
-		.champ {
-			font-weight: 300;
-			font-size: 50px;
-			padding-top: 300px;
-			padding-left: 100px;
-			text-align: left;
-			padding-left: 200px;
-			align-items: left;
-		}
-
-		.menu-items > a:hover {
-			color: #1ee494;
-		}
-
-		.main {
-			display: flex;
-			height: 800px;
-			width: 100%;
-		}
-
-		.top {
-			width: 100%;
-		}
-
-		#email {
-			border-start-start-radius: 5px;
-			width: 200px;
-			height: 50px;
-			padding: 10px;
-			margin-left: 20px;
-			border: 2px solid #01b289;
-		}
-
-		.w-button {
-			width: 100px;
-			height: 50px;
-			background-color: #01b289;
-			border-end-end-radius: 5px;
-			border: 0;
-			color: WHITE;
-			font-weight: 800;
-			font-size: 22%;
-			border: 2px solid #01b289;
-		}
-
-		.image-hero {
-			margin-top: 50px;
-			margin-right: 200px;
-			width: 80%;
-			background: rgb(2, 0, 36);
-			background: linear-gradient(
-				90deg,
-				rgba(2, 0, 36, 1) 0%,
-				rgba(0, 255, 111, 1) 0%,
-				rgba(0, 212, 255, 1) 100%
-			);
-			border-end-end-radius: 150px;
-			border-start-start-radius: 100px;
-			border-bottom-left-radius: 400px;
-			margin-top: 100px;
-		}
-
-		.mainn {
-			font-family: "Belleza", sans-serif;
-			padding-bottom: 40px;
-		}
-
-		p {
-			color: #283739;
-			font-weight: 400;
-			font-family: "Open Sans", sans-serif;
-		}
-
-		.mainn2 {
-			font-family: "Belleza", sans-serif;
-			padding-top: 100px;
-		}
-		.mid {
-			display: flex;
-			justify-content: center;
-			margin-top: 50px;
-			gap: 50px;
-		}
-
-		.mid-img2 {
-			padding: 50px;
-			margin-top: 30px;
-
-			border-radius: 50px;
-		}
-
-		.back {
-			margin-top: 30px;
-			padding: 50px;
-
-			border-radius: 50px;
-		}
-
-		.middy {
-			font-weight: 800;
-			color: #557571;
-		}
-
-		.mid-2img {
-			width: 20%;
-		}
-
-		.jammm {
-			font-family: "Belleza", sans-serif;
-		}
-
-		.mid-2img {
-			width: 50%;
-			padding-top: 50px;
-		}
-
-		.jammm1 {
-			margin-top: 100px;
-			font-family: "Belleza", sans-serif;
-		}
-
-		.jammm2 {
-			color: #5c8d89;
-			font-family: "Open Sans", sans-serif;
-		}
-
-		.ankr {
-			color: black;
+		.review {
+			margin-top: 250px;
+			font-family: "Orbitron", sans-serif;
 			text-decoration: none;
-			font-family: "Open Sans", sans-serif;
 		}
 
-		/* footer part css */
-		footer {
+		.review a {
+			color: #59ce8f;
+			font-size: 2em;
+			text-decoration: none;
+			font-weight: 900;
+			letter-spacing: 2px;
+			font-family: "Orbitron", sans-serif;
+		}
+
+		.p-tag {
+			font-family: "Belleza", sans-serif;
+			color: gray;
+			font-weight: 600;
+		}
+
+		.main-div {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: auto;
+			gap: 30px;
+			width: 80%;
+			margin: auto;
+			height: auto;
+			margin-top: 50px;
+			justify-content: left;
+            background-color: #C0D8C0;
+		}
+
+		.main-div > div {
+			width: 100%;
+			height: 500px;
+
+			justify-content: left;
+			text-align: center;
+			border-top-right-radius:50px;
+            border-bottom-left-radius: 100px;
+			background-color: #f9f9f9;
+			
+		}
+
+		.img-male {
+			text-align: left;
+			margin-right: 450px;
+			margin-top: 50px;
+
+			border-top-right-radius: 60px;
+
+			border-bottom-left-radius: 60px;
+		}
+
+		h3 {
+			color: grey;
+			font-size: large;
+			font-family: "Orbitron", sans-serif;
+			font-weight: 400;
+			padding-top: 40px;
+		}
+
+        footer {
 			width: 100%;
 			padding: 200px;
 			margin-top: 200px;
@@ -409,155 +341,162 @@
 			line-height: 50px;
 			text-decoration: none;
 		}
+        .ankr {
+            text-decoration: none;
+            color: #222222;
+            font-weight: 700;
+        }
 	</style>
 	<body>
 		<nav>
 			<div class="logo">
-				<a href="#"><i class="fa-brands fa-digital-ocean"></i>C3AN</a>
+				<a href="index.html"><i class="fa-brands fa-digital-ocean"></i>C3AN</a>
 			</div>
 			<div class="navigation">
 				<ul class="menu">
 					<li class="menu-items"><a href="#">Products</a></li>
 					<li class="menu-items"><a href="#">Templates</a></li>
 					<li class="menu-items"><a href="#">Pricing</a></li>
-					<li class="menu-items"><a href="review.html">Reviews</a></li>
+					<li class="menu-items"><a href="#">Reviews</a></li>
 					<button class="nav-btn">
-						<a href="login.html" class="ankr">LOG IN</a>
+						<a  href="login.html" class="ankr">LOG IN</a>
 					</button>
 					<button class="nav-btn2">
 						<a href="login.html" class="ankr"> GET STARTED</a>
 					</button>
 				</ul>
 			</div>
-			
 		</nav>
-		<div class="main">
-			<div class="top champ">
-				<div class="hidden">
 
-					<h4 class="mainn">
-						Everything you need to<br />
-						run your business.
-						<br />
-					</h4>
-				</div>
-				<form
-					id="wf-form-Longtail-Form"
-					name="wf-form-Longtail-form"
-					data-name="Longtail form"
-					method="get"
-					class="email-form"
-					aria-label="Longtail form"
-				>
-					<input
-						type="email"
-						class="field-style w-input"
-						maxlength="256"
-						name="Email"
-						data-name="Email"
-						placeholder="Enter your email"
-						id="email"
-						required=""
-					/><input
-						type="submit"
-						value="START FREE"
-						data-wait="Please wait..."
-						id="longtail-form-button"
-						class="cta-submit w-button"
-					/>
-				</form>
-			</div>
-			<div class="top rotate">
-				<img
-					src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/60dc499268d597166db997aa_bonsai_hero-opt-2.png"
-					alt="Hero image"
-					sizes="(max-width: 479px) 94vw, (max-width: 767px) 47vw, (max-width: 991px) 53vw, 56vw"
-					srcset="
-						https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/60dc499268d597166db997aa_bonsai_hero-opt-2-p-500.png  500w,
-						https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/60dc499268d597166db997aa_bonsai_hero-opt-2.png       1578w
-					"
-					width="789"
-					class="image-hero"
-				/>
-			</div>
-		</div>
-
-		<div class="hidden">
-
-			<h1 class="mainn2">Make more, manage less</h1>
-		</div>
-
-		<p>
-			OC3AN integrates and automates every step of your business so it <br />
-			runs seamlessly - from proposal to tax season.
-		</p>
-		<div class="mid">
-			<div>
-				<p class="middy">Without OC3AN</p>
-				<img
-					class="mid-img2"
-					src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c6c51feb665_ill_before_2n%20block.svg"
-					alt="Without Bonsai image"
-					loading="lazy"
-				/>
-			</div>
-			<div>
-				<p class="middy">With OC3AN</p>
-				<img
-					class="back"
-					src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c9ed8feb675_ill_after_2nd%20block.svg"
-					alt="With Bonsai image"
-					loading="lazy"
-				/>
-			</div>
-		</div>
-
-		<div>
-			<div></div>
-			<div>
-				<div class="hidden">
-
-					<h1 class="jammm">Win More Work</h1>
-				</div>
-				<p>
-					With just a few clicks, you can craft structured proposals <br />
-					with clear estimates to close your deals faster.
-				</p>
-				<div class="hidden">
-
-					<img
-					class="mid-2img"
-					srcset="
-					https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/6050acdd031b9f58db100f72_Graphic_Proposal-opt-p-500.png  500w,
-					https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/6050acdd031b9f58db100f72_Graphic_Proposal-opt.png       1254w
-					"
-					sizes="(max-width: 991px) 100vw, 46vw"
-					alt=""
-					src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/6050acdd031b9f58db100f72_Graphic_Proposal-opt.png"
-					loading="lazy"
-					class="image-absolute _8"
-					/>
-				</div>
-				</div>
-		</div>
-
-		<h1 class="jammm1">
-			Trusted by 500K+ self-employed workers <br />
-			and small businesses
+		<h1 class="review">
+			<a href="#"><i class="fa-brands fa-digital-ocean"></i>C3AN</a> REVIEWS
 		</h1>
-		<br />
+		<p class="p-tag">200,000+ Freelancers Love OC3AN. Here's why.</p>
 
-		<h3 class="jammm2">
-			Whether you’re just getting started or your business is <br />
-			booming, Bonsai has you covered.
-		</h3>
+		<div class="main-div">
+			<div>
+				<img
+					class="img-male"
+					src="https://imgs.search.brave.com/8C_x2h03WG_9Quh7a7g7soe8JNbqR0j5Am041KIiASU/rs:fit:470:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC41/UUxaUXBybHdkb3Y3/VzZDQm5IaTZ3SGFI/ZSZwaWQ9QXBp"
+					alt=""
+				/>
+				<img
+					src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c29a9feb660_quote-icon.svg"
+					alt=""
+					class="quote-icon"
+				/>
+				<h3>
+					"I did a lot of research before switching to Bonsai from another
+					invoicing service. The ability to send and sign contracts was a game
+					changer for me. No one else offers such a seamless process from
+					proposal to contract to invoice. It has saved me a lot of time and
+					lets me focus on creative work."
+				</h3>
+			</div>
+			<div>
+				<img
+					class="img-male"
+					src="https://imgs.search.brave.com/8C_x2h03WG_9Quh7a7g7soe8JNbqR0j5Am041KIiASU/rs:fit:470:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC41/UUxaUXBybHdkb3Y3/VzZDQm5IaTZ3SGFI/ZSZwaWQ9QXBp"
+					alt=""
+				/>
 
-		<div>
-			<div></div>
-			<div></div>
+				<img
+					src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c29a9feb660_quote-icon.svg"
+					alt=""
+					class="quote-icon"
+				/>
+
+				<h3>
+					"I did a lot of research before switching to Bonsai from another
+					invoicing service. The ability to send and sign contracts was a game
+					changer for me. No one else offers such a seamless process from
+					proposal to contract to invoice. It has saved me a lot of time and
+					lets me focus on creative work."
+				</h3>
+			</div>
+			<div>
+				<img
+					class="img-male"
+					src="https://imgs.search.brave.com/8C_x2h03WG_9Quh7a7g7soe8JNbqR0j5Am041KIiASU/rs:fit:470:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC41/UUxaUXBybHdkb3Y3/VzZDQm5IaTZ3SGFI/ZSZwaWQ9QXBp"
+					alt=""
+				/>
+
+				<img
+					src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c29a9feb660_quote-icon.svg"
+					alt=""
+					class="quote-icon"
+				/>
+				<h3>
+					"I did a lot of research before switching to Bonsai from another
+					invoicing service. The ability to send and sign contracts was a game
+					changer for me. No one else offers such a seamless process from
+					proposal to contract to invoice. It has saved me a lot of time and
+					lets me focus on creative work."
+				</h3>
+			</div>
+			<div>
+				<img
+					class="img-male"
+					src="https://imgs.search.brave.com/8C_x2h03WG_9Quh7a7g7soe8JNbqR0j5Am041KIiASU/rs:fit:470:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC41/UUxaUXBybHdkb3Y3/VzZDQm5IaTZ3SGFI/ZSZwaWQ9QXBp"
+					alt=""
+				/>
+
+				<img
+					src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c29a9feb660_quote-icon.svg"
+					alt=""
+					class="quote-icon"
+				/>
+				<h3>
+					"I did a lot of research before switching to Bonsai from another
+					invoicing service. The ability to send and sign contracts was a game
+					changer for me. No one else offers such a seamless process from
+					proposal to contract to invoice. It has saved me a lot of time and
+					lets me focus on creative work."
+				</h3>
+			</div>
+			<div>
+				<img
+					class="img-male"
+					src="https://imgs.search.brave.com/8C_x2h03WG_9Quh7a7g7soe8JNbqR0j5Am041KIiASU/rs:fit:470:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC41/UUxaUXBybHdkb3Y3/VzZDQm5IaTZ3SGFI/ZSZwaWQ9QXBp"
+					alt=""
+				/>
+
+				<img
+					src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c29a9feb660_quote-icon.svg"
+					alt=""
+					class="quote-icon"
+				/>
+				<h3>
+					"I did a lot of research before switching to Bonsai from another
+					invoicing service. The ability to send and sign contracts was a game
+					changer for me. No one else offers such a seamless process from
+					proposal to contract to invoice. It has saved me a lot of time and
+					lets me focus on creative work."
+				</h3>
+			</div>
+			<div>
+				<img
+					class="img-male"
+					src="https://imgs.search.brave.com/8C_x2h03WG_9Quh7a7g7soe8JNbqR0j5Am041KIiASU/rs:fit:470:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC41/UUxaUXBybHdkb3Y3/VzZDQm5IaTZ3SGFI/ZSZwaWQ9QXBp"
+					alt=""
+				/>
+
+				<img
+					src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c29a9feb660_quote-icon.svg"
+					alt=""
+					class="quote-icon"
+				/>
+				<h3>
+					"I did a lot of research before switching to Bonsai from another
+					invoicing service. The ability to send and sign contracts was a game
+					changer for me. No one else offers such a seamless process from
+					proposal to contract to invoice. It has saved me a lot of time and
+					lets me focus on creative work."
+				</h3>
+			</div>
 		</div>
 
-		<footer>
+        <footer>
 			<div class="content">
 				<div class="left box">
 					<div class="upper">
@@ -609,20 +548,4 @@
 			</div>
 		</footer>
 	</body>
-	<script>
-		const observer = new IntersectionObserver((entries) => {
-	entries.forEach((entry) => {
-		console.log(entry);
-		if (entry.isIntersecting) {
-			entry.target.classList.add("show");
-		} else {
-			entry.target.classList.remove("show");
-		}
-	});
-});
-
-     const hiddenElements = document.querySelectorAll(".hidden");
-     hiddenElements.forEach((el) => observer.observe(el));
-	</script>
-
 </html>
